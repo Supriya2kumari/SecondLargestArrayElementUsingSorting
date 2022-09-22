@@ -1,0 +1,35 @@
+import java.util.*;
+
+class SecondLargest 
+{
+    public static void main(String[] args) 
+    {
+        int i;
+        int a[] = {22,15,12,18,6,9,10,88,77};
+        
+        //PRINT ORIGINAL ARRAY
+        
+        System.out.println("original array : ");
+        
+        for(i=0; i<a.length; i++)
+        {
+            System.out.print(a[i]+" ");
+        }
+        
+        //PRINT SORTED ARRAY
+        
+         System.out.println();
+         System.out.println("Sorted array : ");
+         
+        for(i=0; i<a.length; i++)
+        {
+            Arrays.sort(a);
+            System.out.print(a[i]+" ");
+        }
+        
+        //PRINT SECOND LARGEST ELEMENT 
+        
+        System.out.println();
+        System.out.println("Second largest element is : "+a[i-2]);
+    }
+}
